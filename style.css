@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+}
+
+.container {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.nav {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
+}
+
+.nav--logo {
+  max-width: 100px;
+}
+
+section {
+  padding: 0 36px;
+}
+
+.hero--grid {
+  margin: 30px 0;
+  display: grid;
+  justify-content: center;
+  gap: 8px;
+  grid-template-columns: repeat(5, 73px);
+}
+
+.hero--grid > img {
+  width: 100%;
+  max-height: 95px;
+}
+
+.image1 {
+  grid-row: 1/7;
+  grid-column: 4/5;
+}
+
+.image9 {
+  grid-row: 2/6;
+  grid-column: 2/3;
+}
+
+.image4 {
+  grid-row: 3/8;
+  grid-column: 5/6;
+}
+
+.image6 {
+  grid-row: 4/9;
+  grid-column: 3/4;
+  align-self: end;
+}
+
+.image7 {
+  grid-row: 5/10;
+  grid-column: 1/2;
+}
+
+.image5 {
+  grid-row: 6/11;
+  grid-column: 2/3;
+}
+
+.image2 {
+  grid-row: 7/12;
+  grid-column: 4/5;
+}
+
+.image3 {
+  grid-row: 8/13;
+  grid-column: 5/6;
+}
+
+.image8 {
+  grid-row: 9/14;
+  grid-column: 3/4;
+}
+
+.hero--header {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  line-height: 110%;
+}
+
+.hero--text {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 50px 0;
+  max-width: 320px;
+  line-height: 110%;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  width: 175px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+}
+
+.card--image {
+  width: 100%;
+  max-height: 235px;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 4px 6px;
+  margin: 0;
+  border-radius: 2px;
+  background-color: #fff;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+.card--title {
+  margin: 0;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.card--star {
+  height: 14px;
+}
+
+.card--title {
+  margin: 8px 0;
+}
+
+.card--price {
+  margin-top: auto;
+}
+
+@media (max-width: 450px) {
+  section {
+    padding: 0 20px;
+  }
+
+  .hero--header {
+    font-size: 28px;
+  }
+
+  .hero--text {
+    font-size: 14px;
+    max-width: 270px;
+  }
+
+  .hero--grid {
+    grid-template-columns: repeat(5, 47px);
+  }
+}
